@@ -1,0 +1,57 @@
+{
+	"callsign":"OM7FX-15",
+	"wifi":
+	{
+		"active":false,
+		"AP": [
+			{ "SSID": "airCube-2G", "password": "26496Oem00153"  }
+		]
+	},
+	"beacon":
+	{
+		"message":"LoRa DiGi, 433.775 MHz",
+		"position":
+		{
+			"latitude": 48.72436,
+			"longitude": 19.11782 
+		}
+	},
+	"aprs_is":
+	{
+		"active":false,
+		"password":"21481",
+		"server":"euro.aprs2.net",
+		"port":14580,
+		"beacon":false,
+		"beacon_timeout":20
+	},
+	"digi":
+	{
+		"active":true,
+		"forward_timeout":5,
+		"beacon":true,
+		"beacon_timeout":20
+	},
+	"lora":
+	{
+		"frequency_rx":433775000,
+		"frequency_tx":433775000,
+		"power":20,
+		"spreading_factor":12,
+		"signal_bandwidth":125000,
+		"coding_rate4":5
+	},
+	"display":
+	{
+		"always_on":true,
+		"timeout":10,
+		"overwrite_pin":0
+	},
+	"ftp":
+	{
+		"active":false,
+		"user": [
+			{ "name":"ftp", "password":"ftp" }
+		]
+	}
+}
