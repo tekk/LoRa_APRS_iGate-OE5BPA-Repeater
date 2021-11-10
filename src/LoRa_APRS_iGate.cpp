@@ -226,7 +226,7 @@ void loop()
     	int lastIndex = newData.lastIndexOf("!");
     	int index = newData.substring(0, lastIndex).lastIndexOf("!");
     	newData.replace("\n", "");
-    	String rssi = String(" DP_RSSI: " + String(lora_aprs.packetRssi()) + " dBm DP_SNR: " + String(lora_aprs.packetSnr()) + " dB ");
+    	String rssi = String(" DR:" + String(lora_aprs.packetRssi()) + " DS:" + String(lora_aprs.packetSnr()));
 	    newData = String(newData.substring(0, index) + rssi + newData.substring(index) + "\n"); 
 	    msg->getAPRSBody()->setData(newData);
 
